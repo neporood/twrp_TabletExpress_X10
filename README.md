@@ -1,4 +1,4 @@
-# device_TabletExpress_X10
+# Dragon Touch X10 by Tablet Express
 Device Tree for Dragon Touch X10, Allwinner A83T
 
 This is the Device Tree used for Building TWRP 3.x.x Touch Recovery using the
