@@ -15,9 +15,8 @@ BOARD_MKBOOTIMG_ARGS := --base 40000000 --pagesize 2048 --kernel_offset 00008000
 TARGET_RECOVERY_INITRC := device/TabletExpress/X10/rootdir/init.rc     
 
 # TWRP
-TWHAVE_SELINUX := true
 TW_THEME := landscape_hdpi
-TWRP_NEW_THEME := false
+TWHAVE_SELINUX := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_REBOOT_RECOVERY := true
 TW_EXCLUDE_SUPERSU := true
