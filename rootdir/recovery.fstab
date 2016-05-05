@@ -6,17 +6,11 @@
 
 
 /bootloader	vfat	/dev/block/nanda   	flags=backup=0
-/env       	emmc  	/dev/block/nandb                 
+/env       	emmc  	/dev/block/nandb  flags=backup=0                 
 /boot           emmc	/dev/block/nandc        flags=backup=1
 /system         ext4	/dev/block/nandd     	flags=backup=1;wipeingui
 /data          	ext4 	/dev/block/nandk        flags=backup=1;wipeduringfactoryreset;wipeingui
-/misc          	emmc 	/dev/block/nande                 
+/misc          	emmc 	/dev/block/nande  flags=backup=0                 
 /recovery      	emmc	/dev/block/nandf     	flags=backup=1
 /cache         	ext4	/dev/block/nandg        flags=backup=1;wipeduringfactoryreset;wipeingui
-#/extsd          vfat 	/dev/block/mmcblk1p1                     
-#/extsd          vfat	/dev/block/mmcblk1                    
 /external_sd   	vfat 	/dev/block/mmcblk0p1                     
-#/extsd         	vfat	/dev/block/mmcblk0                        
-#/usbhost       	vfat	/dev/block/sda1                           
-#/usbhost       	vfat 	/dev/block/sda                         
-
