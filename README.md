@@ -8,6 +8,8 @@ You can find the script and complete instructions here:
 
 http://forum.xda-developers.com/showpost.php?p=66030554&postcount=11
 
+Now being updated to build CyanogenMod Roms, check back soon...
+
 
 Credits
 -------
