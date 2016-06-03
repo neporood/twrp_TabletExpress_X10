@@ -21,7 +21,7 @@ USE_CLANG_PLATFORM_BUILD := true
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a9
+TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_NEON := true
 
 # Partitions
@@ -46,13 +46,13 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP
-TWHAVE_SELINUX := true
-TW_THEME := landscape_hdpi
-TWRP_NEW_THEME := true
-TW_NO_REBOOT_BOOTLOADER := true
-TW_NO_REBOOT_RECOVERY := true
-TW_EXCLUDE_SUPERSU := true
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+#TWHAVE_SELINUX := true
+#TW_THEME := landscape_hdpi
+#TWRP_NEW_THEME := true
+#TW_NO_REBOOT_BOOTLOADER := true
+#TW_NO_REBOOT_RECOVERY := true
+#TW_EXCLUDE_SUPERSU := true
+#TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
 # Still Need To Do:
