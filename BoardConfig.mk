@@ -15,7 +15,7 @@ TARGET_BOARD_PLATFORM := octopus
 TARGET_BOOTLOADER_BOARD_NAME := exdroid
 TARGET_NO_BOOTLOADER := true
 
-USE_CLANG_PLATFORM_BUILD := true
+#USE_CLANG_PLATFORM_BUILD := true
 
 # Architecture
 TARGET_ARCH := arm
@@ -43,16 +43,19 @@ BOARD_MKBOOTIMG_ARGS := --base 40000000 --pagesize 2048 --kernel_offset 00008000
 TARGET_RECOVERY_INITRC := device/TabletExpress/X10/recovery/root/init.rc
 TARGET_RECOVERY_FSTAB := device/TabletExpress/X10/recovery/root/etc/recovery.fstab    
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
+#TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP
-#TWHAVE_SELINUX := true
-#TW_THEME := landscape_hdpi
-#TWRP_NEW_THEME := true
-#TW_NO_REBOOT_BOOTLOADER := true
-#TW_NO_REBOOT_RECOVERY := true
-#TW_EXCLUDE_SUPERSU := true
-#TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+RECOVERY_VARIANT := twrp
+TW_THEME := landscape_hdpi
+TWHAVE_SELINUX := true
+TW_USE_TOOLBOX := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_NO_REBOOT_RECOVERY := true
+TW_EXCLUDE_SUPERSU := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 
 # Still Need To Do:
