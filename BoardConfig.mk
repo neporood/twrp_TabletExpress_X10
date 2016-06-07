@@ -43,6 +43,13 @@ TARGET_RECOVERY_FSTAB := device/TabletExpress/X10/recovery/root/etc/recovery.fst
 TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USERIMAGES_USE_F2FS := true
 
+# Device Specific sepolicy
+BOARD_SEPOLICY_DIRS := \
+       device/TabletExpress/X10/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       module.te \
+
 # TWRP
 #RECOVERY_VARIANT := twrp
 TW_THEME := landscape_hdpi

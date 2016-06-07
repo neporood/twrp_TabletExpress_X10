@@ -1,0 +1,2 @@
+# Allow insmod in init.rc
+allow init self:capability { sys_module };
