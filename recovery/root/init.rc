@@ -1,5 +1,5 @@
 #Nepo init
-import /init.recovery.${ro.hardware}.rc
+#import /init.recovery.${ro.hardware}.rc
 
 on early-init
     # Apply strict SELinux checking of PROT_EXEC on mmap/mprotect calls.
@@ -13,12 +13,14 @@ on early-init
     start healthd
 
 on init
+    insmod /nand.ko
+
     export PATH /sbin:/system/bin
     export LD_LIBRARY_PATH .:/sbin
     export ANDROID_ROOT /system
     export ANDROID_DATA /data
     export EXTERNAL_STORAGE /sdcard
-
+    insmod /gt9xxf_ts.ko
     symlink /system/etc /etc
 
     mkdir /sdcard
