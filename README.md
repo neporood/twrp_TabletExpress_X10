@@ -3,7 +3,8 @@ Device Tree for Dragon Touch X10, Allwinner A83T
 
 This Device Tree is currently used for Building TWRP 3.x.x Touch Recovery
 
-+ Working Branches
+Working Branches
+----------------
 - CM11
 - CM12.1
 
