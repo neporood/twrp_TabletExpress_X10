@@ -15,8 +15,6 @@ TARGET_BOARD_PLATFORM := octopus
 TARGET_BOOTLOADER_BOARD_NAME := exdroid
 TARGET_NO_BOOTLOADER := true
 
-#USE_CLANG_PLATFORM_BUILD := true
-
 # Architecture
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi
@@ -40,7 +38,7 @@ BOARD_KERNEL_CMDLINE := boot_type=0 disp_para=100 fb_base=0x0 config_size=53088 
 BOARD_MKBOOTIMG_ARGS := --base 40000000 --pagesize 2048 --kernel_offset 00008000 --ramdisk_offset 01000000 --tags_offset 00000100
 
 # Recovery
-TARGET_RECOVERY_INITRC := device/TabletExpress/X10/recovery/root/init.rc
+#TARGET_RECOVERY_INITRC := device/TabletExpress/X10/recovery/root/init.rc
 TARGET_RECOVERY_FSTAB := device/TabletExpress/X10/recovery/root/etc/recovery.fstab    
 TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USERIMAGES_USE_F2FS := true
