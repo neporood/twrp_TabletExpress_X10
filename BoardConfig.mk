@@ -38,10 +38,8 @@ BOARD_KERNEL_CMDLINE := boot_type=0 disp_para=100 fb_base=0x0 config_size=53088 
 BOARD_MKBOOTIMG_ARGS := --base 40000000 --pagesize 2048 --kernel_offset 00008000 --ramdisk_offset 01000000 --tags_offset 00000100
 
 # Recovery
-#TARGET_RECOVERY_INITRC := device/TabletExpress/X10/recovery/root/init.rc
 TARGET_RECOVERY_FSTAB := device/TabletExpress/X10/recovery/root/etc/recovery.fstab    
 TARGET_USERIMAGES_USE_EXT4 := true
-#TARGET_USERIMAGES_USE_F2FS := true
 
 # Device Specific sepolicy
 BOARD_SEPOLICY_DIRS := \
@@ -51,10 +49,8 @@ BOARD_SEPOLICY_UNION := \
        module.te \
 
 # TWRP
-#RECOVERY_VARIANT := twrp
 TW_THEME := landscape_hdpi
 TWHAVE_SELINUX := true
-#TW_USE_TOOLBOX := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_NO_REBOOT_BOOTLOADER := true
@@ -62,16 +58,4 @@ TW_NO_REBOOT_RECOVERY := true
 TW_EXCLUDE_SUPERSU := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
-
-# Still Need To Do:
-
-# Audio
-
-# Bluetooth
-
-# Camera
-
-# Display
-
-# Wifi
 
