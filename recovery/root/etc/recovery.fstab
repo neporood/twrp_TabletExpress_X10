@@ -14,5 +14,7 @@
 /recovery      	emmc	/dev/block/nandf     	flags=backup=1
 /cache         	ext4	/dev/block/nandg        flags=backup=1;wipeduringfactoryreset;wipeingui
 /external_sd   	vfat 	/dev/block/mmcblk0p1                     
-                         
+/usb-otg        vfat    /dev/block/sda1      /dev/block/sda                  flags=removable;storage;wipeingui;usermrf;display="USB-OTG"
+
+
 
